@@ -69,15 +69,17 @@ Reduced
 - On laptop
 - High-level APIs, not much of boilerplate required
  - 50 lines Hadoop vs. 3 lines Spark
- - https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/tree/master/WordCount-Haddop-vs-Spark
+ - https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/tree/master/wordcount-spark-vs-hadoop
  
 Apply functions to results of SQL
+
 ```
 results = context.sql( "SELECT * FROM people" )
 names = results.map(lambda p: p.name)
 ```
 
 SQL against CSV, JSON, ...
+
 ```
 context.jsonFile("s3n://...").registerTempTable("json")
 results = context.sql( "SELECT * FROM people JOIN json ..." )
@@ -85,7 +87,7 @@ results = context.sql( "SELECT * FROM people JOIN json ..." )
 
 - Java, Scala, Python, R, SQL
 - Same code, same system for batch and streaming
- - https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/tree/master/Same-Code-Batch-Streaming
+ - https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/tree/master/same-code-batch-and-streaming
 
 ### Multiple Types of Computations
 
@@ -107,6 +109,7 @@ There are all built-in:
 - Standalone cluster (no YARN or MESOS required)
 - AWS
 - Databricks
+- My own Raspberry PI cluster!
 
 ## DEMO
 
@@ -117,6 +120,6 @@ There are all built-in:
 
 ### Databricks
 
-- Cluster
+- Creating my own cluster
 - Batch: Query Log / AWS
 - Machine Learning: Spam Filter

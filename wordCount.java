@@ -46,4 +46,5 @@
           FileOutputFormat.setOutputPath(conf, new Path(args[1]));
           JobClient.runJob(conf);
         }
+        
      }

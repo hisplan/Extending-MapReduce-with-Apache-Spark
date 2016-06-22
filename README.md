@@ -115,6 +115,7 @@ There are all built-in:
 
 ### Zeppelin
 
+- Bringing up a vagrant box
 - Batch: Query Log
 - Streaming: Twitter (Sentiment, Coverage, Trend Analysis)
 

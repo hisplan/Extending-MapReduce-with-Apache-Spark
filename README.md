@@ -8,12 +8,17 @@ No low-level, no under the hood stuff. Only high-level stuff.
 2. Then reducing over all pairs with the same key
 3. In a distributed manner
 
+In layman's terms:
+- How to find out frequencies of each word occurred in a 1000-page book?
+- Tally marks
+- Think of it as a divide-and-conquer strategy
+
 ## Hello, World / WordCount
 
 Process Diagram:
 http://blog.trifork.com//wp-content/uploads/2009/08/MapReduceWordCountOverview1.png
 
-e.g. Counting Clicks (Anomaly Detection):
+e.g. Counting Clicks (Anomaly Detection project):
 
 Raw
 ```
@@ -62,7 +67,9 @@ Reduced
 ### Easy to Use
 
 - On laptop
-- High-level APIs, not much of boilerplate required (50 vs. 3)
+- High-level APIs, not much of boilerplate required
+ - 50 lines Hadoop vs. 3 lines Spark
+ - https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/tree/master/WordCount-Haddop-vs-Spark
  
 Apply functions to results of SQL
 ```
@@ -78,6 +85,7 @@ results = context.sql( "SELECT * FROM people JOIN json ..." )
 
 - Java, Scala, Python, R, SQL
 - Same code, same system for batch and streaming
+ - https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/tree/master/Same-Code-Batch-Streaming
 
 ### Multiple Types of Computations
 

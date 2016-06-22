@@ -10,13 +10,13 @@ No low-level, no under the hood stuff. Only high-level stuff.
 
 In layman's terms:
 - How to find out frequencies of each word occurred in a 1000-page book?
-- Tally marks (https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/blob/master/images/word-tally.png)
+- Tally marks (https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/blob/master/images/diagram-word-tally.png)
 - Think of it as a divide-and-conquer strategy
 
 ## Hello, World / WordCount
 
 Process Diagram:
-https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/blob/master/images/mapreduce-wordcount-process.png
+https://github.com/hisplan/Extending-MapReduce-with-Apache-Spark/blob/master/images/diagram-mapreduce-wordcount-process.png
 
 e.g. Counting Clicks (Anomaly Detection project):
 

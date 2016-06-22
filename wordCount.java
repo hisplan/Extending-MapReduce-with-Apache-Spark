@@ -6,7 +6,9 @@
      import org.apache.hadoop.io.*;
      import org.apache.hadoop.mapred.*;
      import org.apache.hadoop.util.*;
+     
      public class WordCount {
+     
         public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
           private final static IntWritable one = new IntWritable(1);
           private Text word = new Text();
@@ -19,6 +21,7 @@
             }
           }
         }
+     
         public static class Reduce extends MapReduceBase implements Reducer<Text, IntWritable, Text, IntWritable> {
           public void reduce(Text key, Iterator values, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
             int sum = 0;
@@ -28,6 +31,7 @@
             output.collect(key, new IntWritable(sum));
           }
         }
+     
         public static void main(String[] args) throws Exception {
           JobConf conf = new JobConf(WordCount.class);
           conf.setJobName("wordcount");

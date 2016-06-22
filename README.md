@@ -1,6 +1,6 @@
 # Extending MapReduce with Apache Spark
 
-No low-level, under the hood stuff
+No low-level, no under the hood stuff. Only high-level stuff.
 
 ## What is MapReduce?
 
@@ -55,9 +55,9 @@ Reduced
 
 - In-memory (vs. disk)
 - Sort 1 PB of data (10 trillion records)
--- Spark : under 4 hours on 190 machines (public cloud; AWS)
--- Hadoop : 16 hours on 3,800 machines (dedicated data center)
--- https://databricks.com/blog/2014/10/10/spark-petabyte-sort.html
+ - Spark : under 4 hours on 190 machines (public cloud; AWS)
+ - Hadoop : 16 hours on 3,800 machines (dedicated data center)
+ - https://databricks.com/blog/2014/10/10/spark-petabyte-sort.html
 
 ### Easy to Use
 
